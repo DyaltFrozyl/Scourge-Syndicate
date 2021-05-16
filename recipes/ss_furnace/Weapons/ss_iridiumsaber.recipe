@@ -1,0 +1,13 @@
+{
+  "input" : [
+  { "item" : "ss_temperedclay", "count" : 1 },
+    { "item" : "ss_iridiumorb", "count" : 5 },
+        { "item" : "titaniumbar", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "ss_iridiumsaber",
+    "count" : 1
+  },
+  "duration" : 0,
+  "groups" : [ "ss_furnace2", "ss_weapons", "all" ]
+}

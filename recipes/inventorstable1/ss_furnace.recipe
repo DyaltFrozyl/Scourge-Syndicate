@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "clay", "count" : 20 },
+    { "item" : "ironore", "count" : 4 },
+    { "item" : "campfire", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "ss_furnace",
+    "count" : 1
+  },
+  "duration" : 0,
+  "groups" : [ "inventorstable", "craftingstations", "all" ]
+}

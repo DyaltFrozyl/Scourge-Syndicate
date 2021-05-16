@@ -1,0 +1,12 @@
+{
+  "input" : [
+  { "item" : "clay", "count" : 2 },
+  { "item" : "ironore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "ss_temperedclay",
+    "count" : 1
+  },
+  "duration" : 0,
+  "groups" : [ "ss_furnace", "ss_bars", "all" ]
+}

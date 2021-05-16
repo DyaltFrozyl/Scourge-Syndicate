@@ -1,0 +1,14 @@
+[
+    {
+        "op": "replace",
+        "path": "/input",
+        "value": [
+            {"item": "durasteelore", "count": 2}
+        ]
+    },
+    {
+        "op": "add",
+        "path": "/groups/-",
+        "value": "ss_furnace2"
+    }
+]

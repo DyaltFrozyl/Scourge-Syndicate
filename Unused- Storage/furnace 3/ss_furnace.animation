@@ -1,0 +1,137 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "clay",
+        "states" : {
+          "clay" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "fireglow" ],
+              "persistentSound" : "/sfx/objects/campfire.ogg",
+              "persistentSoundRangeMultiplier" : 0.5
+            }
+          },
+          "iridium" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "fireglow" ],
+              "persistentSound" : "/sfx/objects/campfire.ogg",
+              "persistentSoundRangeMultiplier" : 0.5
+            }
+          },
+          "sect" : {
+            "frames" : 7,
+            "cycle" : 1.0,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOff" : [ "fireglow" ],
+              "lightsOn" : [ "sectglow" ],
+              "persistentSound" : "/sfx/objects/scififurnace.ogg",
+              "persistentSoundRangeMultiplier" : 0.5
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "chassis" : {
+        "properties" : {
+          "centered" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "clay" : {
+              "properties" : {
+                "image" : "ss_furnacelit.png:<color>.<frame>"
+              }
+            },
+
+            "iridium" : {
+              "properties" : {
+                "image" : "ss_furnace2lit.png:<color>.<frame>"
+              }
+            },
+
+           "sect" : {
+              "properties" : {
+                "image" : "ss_furnace3lit.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "fire" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "clay" : {
+              "properties" : {
+                "image" : "ss_furnace.png:<color>.<frame>"
+              }
+            },
+
+            "iridium" : {
+              "properties" : {
+                "image" : "ss_furnace2.png:<color>.<frame>"
+              }
+            },
+
+            "sect" : {
+              "properties" : {
+                "image" : "ss_furnace3.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/mission_unlock_event.ogg"],
+    "fanfare2" : ["/sfx/cinematics/license_acquired_event.ogg"]
+  },
+
+  "lights" : {
+    "fireglow" : {
+      "active" : false,
+      "position" : [0, 1],
+      "color" : [153, 128, 92],
+      "flickerPeriod" : 0.3,
+      "flickerMinIntensity" : 0.95,
+      "flickerMaxIntensity" : 1,
+      "flickerPeriodVariance" : 0.075,
+      "flickerIntensityVariance" : 0.025
+    },
+
+    "sectglow" : {
+      "active" : false,
+      "position" : [0, 1],
+      "color" : [159, 195, 19],
+      "flickerPeriod" : 0.5,
+      "flickerMinIntensity" : 0.95,
+      "flickerMaxIntensity" : 1.0,
+      "flickerPeriodVariance" : 0.0,
+      "flickerIntensityVariance" : 0.0
+    }
+  },
+  
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    }
+  }
+}

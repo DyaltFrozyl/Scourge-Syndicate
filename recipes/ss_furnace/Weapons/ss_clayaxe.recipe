@@ -1,0 +1,11 @@
+{
+  "input" : [
+  { "item" : "ss_temperedclay", "count" : 3 }
+  ],
+  "output" : {
+    "item" : "ss_clayaxe",
+    "count" : 1
+  },
+  "duration" : 0,
+  "groups" : [ "ss_furnace", "ss_weapons", "all" ]
+}

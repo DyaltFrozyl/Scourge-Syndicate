@@ -1,0 +1,10 @@
+{
+  "itemName" : "ss_sectpowercell",
+  "price" : 1000,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ss_sectpowercellicon.png",
+  "description" : "Sect technology can energize Scourge acid so efficiently it will melt anything it touches.",
+  "shortdescription" : "Sect Power Cell",
+  "itemTags" : [ "reagent" ]
+}

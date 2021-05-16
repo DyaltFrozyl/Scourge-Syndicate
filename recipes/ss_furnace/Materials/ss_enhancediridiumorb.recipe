@@ -1,0 +1,12 @@
+{
+  "input" : [
+  { "item" : "ss_iridiumorb", "count" : 2 },
+  { "item" : "durasteelbar", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "ss_enhancediridiumorb",
+    "count" : 1
+  },
+  "duration" : 0,
+  "groups" : [ "ss_furnace3", "ss_bars", "all" ]
+}

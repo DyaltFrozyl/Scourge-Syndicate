@@ -1,0 +1,13 @@
+{
+  "input" : [
+  { "item" : "ss_temperedclay", "count" : 2 },
+  { "item" : "ss_scourgeacidpellet", "count" : 5 },
+  { "item" : "solariumstar", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "ss_scourgedclay",
+    "count" : 1
+  },
+  "duration" : 0,
+  "groups" : [ "ss_furnace3", "ss_bars", "all" ]
+}

@@ -1,0 +1,12 @@
+{
+  "input" : [
+  { "item" : "ss_claybroadsword", "count" : 1 },
+  { "item" : "ss_scourgeacidpellet", "count" : 3 }
+  ],
+  "output" : {
+    "item" : "ss_acidclaybroadsword",
+    "count" : 1
+  },
+  "duration" : 0,
+  "groups" : [ "ss_furnace", "ss_weapons", "all" ]
+}
