@@ -1,0 +1,72 @@
+{
+  "objectName" : "ss_yena",
+  "colonyTags" : ["avian"],
+  "rarity" : "Common",
+  "description" : "Should be unobtainable, but Yena is one of the army commanders.",
+  "shortdescription" : "^#6bff00;Yena",
+  "race" : "avian",
+  "printable" : false,
+  "scannable" : false,
+
+  "inventoryIcon" : "ss_yenaicon.png",
+
+    "scripts" : ["ss_yena.lua"],
+     "scriptDelta" : 10,
+
+  "detectArea" : [ [-8, 0], [14, 6] ],
+"animation" : "ss_yena.animation",
+  "animationParts" : {
+    "yena" : "ss_yena.png",
+    "eye" : "ss_yenalit.png"
+  },
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "ss_yena.png:<color>.<frame>", "fullbright" : true }, { "image" : "ss_yenalit.png:<color>.<frame>" } ],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "imagePosition" : [0, 0],
+      "frames" : 4,
+      "animationCycle" : 4,
+
+      "spaceScan" : 0.1,
+      "interactiveSpaces": [
+        [2, 2], [3, 2], [4, 2],
+        [2, 3], [3, 3], [4, 3]
+      ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "ss_yena.png:<color>.<frame>", "fullbright" : true }, { "image" : "ss_yenalit.png:<color>.<frame>" } ],
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 4,
+      "animationCycle" : 4,
+
+      "spaceScan" : 0.1,
+      "interactiveSpaces": [
+        [1, 2], [2, 2], [3, 2],
+        [1, 3], [2, 3], [3, 3]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "mouthPosition" : [0, 0],
+  "chatOptions" : [
+    "Greetings. I am ^#6bff00;Yena^reset;, as you found in the files and by spawning me.",
+    "Or if you found the secret, good eyes.",
+    "If you're reading this in the .object, I would recommend using me in-game. Feels more authentic.",
+    "If you are reading this in-game, epic.",
+    "This mod was originally a terribly-made and not thought out in-game server 'faction'. I can't explain in this context.",
+    "There is an older version of this on steam, but it is very low quality and only has a few below-average weapons.",
+    "The name was 'Old Scourge Crafter' if you want to check that out, should still be there.",
+    "In that description it says ^#ffcc00;The Dev^reset; might remake it. And here it is.",
+    "The furnaces are almost fully placeholder, and it will take a while for ^#ffcc00;The Dev^reset; to design permenant ones.",
+    "The third upgrade to the furnace only adds two materials that can't be used for anything.",
+    "^#ffcc00;The Dev^reset; didn't remove the option because he's lazy.",
+    "That is all, chat will loop now."
+  ]
+}

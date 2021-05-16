@@ -1,0 +1,35 @@
+{
+  "objectName" : "ss_banner",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 2000,
+
+  "description" : "The 'banner' of the Scourge Syndicate. It is made of thin clay, in place of cloths.",
+  "shortdescription" : "Scourge Tablet-Banner",
+  "race" : "human",
+
+  "apexDescription" : "This is ridiculously designed. What made them think clay would be a good replacement for fabric?",
+  "avianDescription" : "I'd understand using clay for a statue, but not a banner.",
+  "floranDescription" : "Sssoft rock? Why not sssilk or prey ssskinss?",
+  "glitchDescription" : "Worried. That crystal looks very acidic.",
+  "humanDescription" : "How much can I sell that crystal for?",
+  "hylotlDescription" : "That's a very nice looking crystal.",
+  "novakidDescription" : "That d'err do not make any darn sense to mineself.",
+
+
+  "inventoryIcon" : "ss_bannericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "ss_banner.png",
+	  
+      "imagePosition" : [-8, -32],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "bgAnchors" : [ [0, 0], [-1, 0], [1, 0] ]
+
+    }
+  ]
+}

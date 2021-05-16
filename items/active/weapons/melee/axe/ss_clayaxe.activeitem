@@ -1,0 +1,150 @@
+{
+  "itemName" : "ss_clayaxe",
+  "price" : 450,
+  "maxStack" : 1,
+  "level" : 1,
+  "rarity" : "uncommon",
+  "description" : "This is not a very practical weapon. There is far too much force in an axe for this to withstand.",
+  "shortdescription" : "Clay Axe",
+  "tooltipKind" : "Object",
+  "category" : "Axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","dagger"],
+
+  "inventoryIcon" : "ss_clayaxe.png",
+
+  "animation" : "/items/active/weapons/melee/dagger/dagger.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "ss_clayaxe.png"
+  },
+ "animationCustom" : {
+     "animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.08,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        }
+      },
+      "handle" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [-2.6, 1.4],
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/axe/swoosh/ss_axephysicalswoosh.png:<frame>",
+                "damageArea" : [[-2.25, 1.75], [-1, 2.25], [0.25, 2.25], [2, 1.5], [3.25, -0.125], [3.25, -1.25], [2.5, -2.5], [1.0, -2.5]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_dagger.ogg" ]
+    }
+  },
+
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : 0.0,
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
+    "class" : "MeleeSlash",
+
+    "fireTime" : 0.60,
+    "baseDps" : 9.5,
+    "damageConfig" : {
+      "damageSourceKind" : "dagger",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockbackRange" : [10, 15],
+      "timeoutGroup" : "primary"
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "windup" : {
+        "duration" : 0.05,
+        "armRotation" : 75,
+        "weaponRotation" : -20,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+        "preslash" : {
+        "duration" : 0.05,
+        "armRotation" : 25,
+        "weaponRotation" : -20,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : -35,
+        "weaponRotation" : -45,
+        "weaponOffset" : [0, 2.5],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      }
+    }
+  },
+
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+
+}

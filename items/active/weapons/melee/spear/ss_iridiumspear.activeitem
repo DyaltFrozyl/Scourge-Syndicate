@@ -1,0 +1,172 @@
+{
+  "itemName" : "ss_iridiumspear",
+  "price" : 480,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "The original spear of the Scourge, reforged. Very good at penetrating about anything.",
+  "shortdescription" : "Iridium Spear",
+  "tooltipKind" : "object",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","shortsword"],
+
+  "inventoryIcon" : "ss_iridiumspear.png",
+
+  "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
+  "animationParts" : {
+    "handle": "",
+    "blade" : "ss_iridiumspear.png"
+  },
+  "animationCustom" : {"animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire2" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>?<bladeDirectives>",
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        }
+      },
+      "handle" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "transformationGroups" : ["swoosh"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/shortsword/swoosh2/<elementalType>swoosh.png:<frame>",
+                "offset" : [0.25, -0.05],
+                "damageArea" : [[-3, 1], [3, 1], [3, -1], [-3, -1]]
+              }
+            },
+            "fire2" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/shortsword/swoosh2/<elementalType>swoosh.png:<frame>",
+                "offset" : [0.25, -0.05],
+                "damageArea" : [[-3, 1], [3, 1], [3, -1], [-3, -1]]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+},
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "shortswordcombo",
+   "primaryAbility" : {
+    "fireTime" : 0.4,
+    "baseDps" : 9,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "windup1" : {
+        "duration" : 0.1,
+        "armRotation" : -135,
+        "weaponRotation" : 50,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : true,
+		
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "fire1" : {
+        "duration" : 0.3,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "weaponOffset" : [0, 2.25],
+         "twoHanded" : true,
+		
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "wait1" : {
+        "duration" : 0.1,
+        "armRotation" : -45,
+        "weaponRotation" : -45,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : true,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup2" : {
+        "duration" : 0.1,
+        "armRotation" : -135,
+        "weaponRotation" : 50,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : true,
+		
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "fire2" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : -80,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : true,
+		
+        "allowFlip" : true,
+        "allowRotate" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

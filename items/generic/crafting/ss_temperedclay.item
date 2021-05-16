@@ -1,0 +1,10 @@
+{
+  "itemName" : "ss_temperedclay",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ss_temperedclayicon.png",
+  "description" : "Iron makes the clay hard enough to keep shape, but moderately brittle.",
+  "shortdescription" : "Tempered Clay",
+  "itemTags" : [ "reagent" ]
+}

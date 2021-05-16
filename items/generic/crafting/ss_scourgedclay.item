@@ -1,0 +1,10 @@
+{
+  "itemName" : "ss_scourgedclay",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ss_scourgedclayicon.png",
+  "description" : "Scourge bonds to clay with the right touch, a touch only few have mastered.",
+  "shortdescription" : "Scourged Clay",
+  "itemTags" : [ "reagent" ]
+}

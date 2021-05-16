@@ -1,0 +1,9 @@
+{
+  "sounds" : {
+    "chatter" : [
+      "/sfx/humanoid/test_avianhurt_male1.ogg",
+      "/sfx/humanoid/test_avianhurt_male2.ogg",
+      "/sfx/humanoid/test_avianhurt_male3.ogg"
+    ]
+  }
+}

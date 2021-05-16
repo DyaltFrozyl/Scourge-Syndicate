@@ -1,0 +1,44 @@
+{
+  "itemName" : "ss_iridiumbroadsword",
+  "price" : 750,
+  "level" : 2,
+  "maxStack" : 1,
+  "rarity" : "uncommon",
+  "description" : "A decent sword, can't cut through a tree but will slice flesh with ease.",
+  "shortdescription" : "Iridium Broadsword",
+  "tooltipKind" : "object",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "ss_iridiumbroadsword.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "ss_iridiumbroadsword.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.83,
+    "baseDps" : 8.5,
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword"
+    }
+  },
+
+  "altAbilityType" : "risingslash",
+  "altAbility" : {
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword"
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
