@@ -35,7 +35,7 @@
   "learnBlueprintsOnPickup" : [],
 
   "startingUpgradeStage" : 1,
-  "maxUpgradeStage" : 3,
+  "maxUpgradeStage" : 2,
 
   "upgradeStages" : [
     {
@@ -118,56 +118,6 @@
           }
         },
         "filter" : [ "ss_furnace", "ss_furnace2" ],
-        "initialRecipeUnlocks" : [],
-        "upgradeMaterials" : [
-          { "item" : "ss_iridiumorb", "count" : 8 },
-          { "item" : "durasteelbar", "count" : 4 },
-          { "item" : "ss_scourgeacidpellet", "count" : 6 },
-          { "item" : "glass", "count" : 20 }
-        ]
-      },
-
-      "learnBlueprintsOnPickup" : [],
-
-      "upgradeSoundEffect" : "fanfare2",
-      "upgradeParticleEffect" : "dust"
-    },
-
-    {
-      "animationState" : "sect",
-
-      "itemSpawnParameters" : {
-        "price" : 750,
-        "inventoryIcon" : "ss_furnace3icon.png",
-        "placementImage" : "ss_furnace3.png:default.default",
-        "placementImagePosition" : [-8, 0],    
-
-        "description" : "The atomic furnace is used to turn ores and other materials into crafting ingredients.",
-        "shortdescription" : "^#b6ff00;Sect Smithy^reset;",
-
-"apexDescription" : "While still made of Iridium, this furnace is much more powerful.",
-        "avianDescription" : "An Iridium furnace, which uses a beam, alongside some acid, to melt and reform metals.",
-        "floranDescription" : "Shiny thing shoot oresss, change them. Made of purple metal.",
-        "glitchDescription" : "Amazed. A central beam and acidic compound Iridium furnace. It can make powerful equipment.",
-        "humanDescription" : "A powerful furnace, created from Iridium. It can make some powerful equipment.",
-        "hylotlDescription" : "This furnace has a beam and a type of acid inside. It's suprisingly powerful.",
-        "novakidDescription" : "This furnace looks like somethin' a high-tech blacksmith would use."
-
-      },
-
-      "interactData" : {
-        "config" : "/interface/windowconfig/ss_furnace3.config",
-        "paneLayoutOverride" : {
-          "windowtitle" : {
-            "title" : " ^#b6ff00;Sect Smithy^reset;",
-            "subtitle" : " ^#b9b5b2;Gear and Bars",
-            "icon" : {
-              "file" : "/interface/crafting/ss_craftingfurnace3.png"
-            }
-          }
-        },
-        "filter" : [ "ss_furnace", "ss_furnace2", "ss_furnace3" ],
-        "craftingSound" : "/sfx/interface/crafting_furnacetech.ogg",
         "initialRecipeUnlocks" : []
       },
 

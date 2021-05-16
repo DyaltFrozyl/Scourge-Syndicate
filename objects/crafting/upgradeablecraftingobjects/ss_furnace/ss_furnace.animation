@@ -23,17 +23,6 @@
               "persistentSound" : "/sfx/objects/campfire.ogg",
               "persistentSoundRangeMultiplier" : 0.5
             }
-          },
-          "sect" : {
-            "frames" : 7,
-            "cycle" : 1.0,
-            "mode" : "loop",
-            "properties" : {
-              "lightsOff" : [ "fireglow" ],
-              "lightsOn" : [ "sectglow" ],
-              "persistentSound" : "/sfx/objects/scififurnace.ogg",
-              "persistentSoundRangeMultiplier" : 0.5
-            }
           }
         }
       }
@@ -55,12 +44,6 @@
             "iridium" : {
               "properties" : {
                 "image" : "ss_furnace2lit.png:<color>.<frame>"
-              }
-            },
-
-           "sect" : {
-              "properties" : {
-                "image" : "ss_furnace3lit.png:<color>.<frame>"
               }
             }
           }
@@ -84,12 +67,6 @@
               "properties" : {
                 "image" : "ss_furnace2.png:<color>.<frame>"
               }
-            },
-
-            "sect" : {
-              "properties" : {
-                "image" : "ss_furnace3.png:<color>.<frame>"
-              }
             }
           }
         }
@@ -112,17 +89,6 @@
       "flickerMaxIntensity" : 1,
       "flickerPeriodVariance" : 0.075,
       "flickerIntensityVariance" : 0.025
-    },
-
-    "sectglow" : {
-      "active" : false,
-      "position" : [0, 1],
-      "color" : [159, 195, 19],
-      "flickerPeriod" : 0.5,
-      "flickerMinIntensity" : 0.95,
-      "flickerMaxIntensity" : 1.0,
-      "flickerPeriodVariance" : 0.0,
-      "flickerIntensityVariance" : 0.0
     }
   },
   
