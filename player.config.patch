@@ -1,0 +1,30 @@
+[
+      //Armours
+        //Clay
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_clayarmorchest" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_clayarmorlegs" }},
+
+      //Weapons
+        //Clay
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_claybroadsword" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_clayaxe" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_clayshortspear" }},
+        //Iridium
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_iridiumbroadsword" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_iridiumsaber" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_iridiumgreatsword" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_iridiumshortspear" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_iridiumrapier" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_iridiumspear" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_iridiumdagger" }},
+
+      //Objects
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_furnace" }},  
+
+      //Materials
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_temperedclay" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_iridiumorb" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_enhancediridiumorb" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_scourgeacidpellet" }},
+{"op" : "add", "path" : "/defaultBlueprints/tier1/-", "value": { "item" : "ss_sectpowercell" }}
+]
