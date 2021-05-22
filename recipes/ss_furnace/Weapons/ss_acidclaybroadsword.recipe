@@ -8,5 +8,5 @@
     "count" : 1
   },
   "duration" : 0,
-  "groups" : [ "ss_furnace", "ss_weapons", "all" ]
+  "groups" : [ "ss_acidbarrel"]
 }
