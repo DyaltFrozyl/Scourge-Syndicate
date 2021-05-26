@@ -1,29 +1,39 @@
 {
-  "itemName" : "ss_claybroadsword",
+  "itemName" : "ss_acidiridiumsaber",
   "price" : 750,
-  "level" : 1,
+  "level" : 3,
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "This clay isn't made to be under heavy stress, but if it's all you have, it can handle.",
-  "shortdescription" : "Clay Broadsword",
+  "description" : "Good at melting flesh while slicing through it.",
+  "shortdescription" : "Acid Iridium Saber",
   "tooltipKind" : "object",
   "category" : "broadsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword", "ss_acidweapon"],
-  "upgradeItem" : "ss_acidclaybroadsword",
+  "itemTags" : ["weapon","melee","broadsword"],
 
-  "inventoryIcon" : "ss_claybroadsword.png",
+  "inventoryIcon" : "ss_acidiridiumsaber.png",
 
   "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
   "animationParts" : {
-    "handle" : "",
-    "blade" : "ss_claybroadsword.png"
+    "handle" : "ss_acidiridiumsaber.png",
+    "blade" : "ss_acidiridiumsaberfullbright.png"
   },
-  "animationCustom" : { },
+ "animationCustom" : { 
+  "animatedParts" : {
+    "parts" : {
+      "blade" : {
+        "properties" : {
+         "zLevel" : 2,
+          "fullbright" : true
+        }
+      }
+    } 
+  }
+},
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "poison",
 
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {

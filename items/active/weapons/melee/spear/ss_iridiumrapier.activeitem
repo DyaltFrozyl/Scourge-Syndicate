@@ -9,7 +9,8 @@
   "tooltipKind" : "object",
   "category" : "'Sword-Spear'",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","shortsword"],
+  "itemTags" : ["weapon","melee","shortsword", "ss_acidweapon"],
+  "upgradeItem" : "ss_acidiridiumrapier",
 
   "inventoryIcon" : "ss_iridiumrapier.png",
 

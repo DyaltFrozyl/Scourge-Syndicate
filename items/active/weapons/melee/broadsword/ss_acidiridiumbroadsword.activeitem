@@ -1,29 +1,40 @@
 {
-  "itemName" : "ss_claybroadsword",
+  "itemName" : "ss_acidiridiumbroadsword",
   "price" : 750,
-  "level" : 1,
+  "level" : 2,
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "This clay isn't made to be under heavy stress, but if it's all you have, it can handle.",
-  "shortdescription" : "Clay Broadsword",
+  "description" : "An average weapon coated with Scourge can make it many times more deadly.",
+  "shortdescription" : "Acid Iridium Broadsword",
   "tooltipKind" : "object",
   "category" : "broadsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword", "ss_acidweapon"],
-  "upgradeItem" : "ss_acidclaybroadsword",
+  "itemTags" : ["weapon","melee","broadsword"],
 
-  "inventoryIcon" : "ss_claybroadsword.png",
+  "inventoryIcon" : "ss_acidiridiumbroadsword.png",
 
   "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
   "animationParts" : {
-    "handle" : "",
-    "blade" : "ss_claybroadsword.png"
+    "handle" : "ss_acidiridiumbroadsword.png",
+    "blade" : "ss_acidiridiumbroadswordfullbright.png"
   },
-  "animationCustom" : { },
+ "animationCustom" : { 
+  "animatedParts" : {
+    "parts" : {
+      "blade" : {
+        "properties" : {
+         "zLevel" : 2,
+          "fullbright" : true
+        }
+      }
+    } 
+  }
+},
+
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "poison",
 
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {

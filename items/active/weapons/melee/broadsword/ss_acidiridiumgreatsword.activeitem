@@ -1,29 +1,39 @@
 {
-  "itemName" : "ss_claybroadsword",
+  "itemName" : "ss_acidiridiumgreatsword",
   "price" : 750,
-  "level" : 1,
+  "level" : 4,
   "maxStack" : 1,
-  "rarity" : "uncommon",
-  "description" : "This clay isn't made to be under heavy stress, but if it's all you have, it can handle.",
-  "shortdescription" : "Clay Broadsword",
+  "rarity" : "Rare",
+  "description" : "The first sword, the first coat. It's believed the old Scourge used a nameless metal.",
+  "shortdescription" : "Acid Iridium Greatsword",
   "tooltipKind" : "object",
   "category" : "broadsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword", "ss_acidweapon"],
-  "upgradeItem" : "ss_acidclaybroadsword",
+  "itemTags" : ["weapon","melee","broadsword"],
 
-  "inventoryIcon" : "ss_claybroadsword.png",
+  "inventoryIcon" : "ss_acidiridiumgreatsword.png",
 
   "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
   "animationParts" : {
-    "handle" : "",
-    "blade" : "ss_claybroadsword.png"
+    "handle" : "ss_acidiridiumgreatsword.png",
+    "blade" : "ss_acidiridiumgreatswordfullbright.png"
   },
-  "animationCustom" : { },
+ "animationCustom" : { 
+  "animatedParts" : {
+    "parts" : {
+      "blade" : {
+        "properties" : {
+         "zLevel" : 2,
+          "fullbright" : true
+        }
+      }
+    } 
+  }
+},
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "poison",
 
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {

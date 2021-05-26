@@ -9,7 +9,8 @@
   "tooltipKind" : "object",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","shortsword"],
+  "itemTags" : ["weapon","melee","shortsword", "ss_acidweapon"],
+  "upgradeItem" : "ss_acidiridiumspear",
 
   "inventoryIcon" : "ss_iridiumspear.png",
 

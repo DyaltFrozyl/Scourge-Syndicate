@@ -9,7 +9,8 @@
   "tooltipKind" : "object",
   "category" : "broadsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword"],
+  "itemTags" : ["weapon","melee","broadsword", "ss_acidweapon"],
+  "upgradeItem" : "ss_acidiridiumgreatsword",
 
   "inventoryIcon" : "ss_iridiumgreatsword.png",
 

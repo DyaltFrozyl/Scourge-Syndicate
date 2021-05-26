@@ -1,25 +1,25 @@
 {
-  "itemName" : "ss_iridiumshortspear",
+  "itemName" : "ss_acidiridiumspear",
   "price" : 480,
-  "level" : 2,
+  "level" : 4,
   "maxStack" : 1,
-  "rarity" : "Uncommon",
-  "description" : "A javelin-like shortspear, can thrust through plate and some scale.",
-  "shortdescription" : "Iridium Shortspear",
+  "rarity" : "Rare",
+  "description" : "The old scourge was believed to be a very small group that bombed their targets with acid before raiding.",
+  "shortdescription" : "Acid Iridium Spear",
   "tooltipKind" : "object",
-  "category" : "Shortspear",
-  "twoHanded" : false,
-  "itemTags" : ["weapon","melee","shortsword", "ss_acidweapon"],
-  "upgradeItem" : "ss_acidiridiumshortspear",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","shortsword"],
 
-  "inventoryIcon" : "ss_iridiumshortspear.png",
+  "inventoryIcon" : "ss_acidiridiumspear.png",
 
   "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
   "animationParts" : {
-    "handle": "",
-    "blade" : "ss_iridiumshortspear.png"
+    "handle": "ss_acidiridiumspear.png",
+    "blade" : "ss_acidiridiumspearfullbright.png"
   },
-  "animationCustom" : {"animatedParts" : {
+  "animationCustom" : {
+    "animatedParts" : {
     "stateTypes" : {
       "swoosh" : {
         "default" : "idle",
@@ -45,9 +45,10 @@
     "parts" : {
       "blade" : {
         "properties" : {
-          "zLevel" : 0,
+          "zLevel" : 2,
           "centered" : true,
           "image" : "<partImage><paletteSwaps>?<bladeDirectives>",
+          "fullbright" : true,
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0]
         }
@@ -99,17 +100,17 @@
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "poison",
 
   "primaryAbilityType" : "shortswordcombo",
    "primaryAbility" : {
-    "fireTime" : 0.625,
-    "baseDps" : 6,
+    "fireTime" : 0.4,
+    "baseDps" : 9,
 
     "stances" : {
       "idle" : {
         "armRotation" : -90,
-        "weaponRotation" : -10,
+        "weaponRotation" : 0,
         "weaponOffset" : [0, 2.25],
         "twoHanded" : false,
 
@@ -121,7 +122,7 @@
         "armRotation" : -135,
         "weaponRotation" : 50,
         "weaponOffset" : [0, 2.25],
-        "twoHanded" : false,
+        "twoHanded" : true,
 		
         "allowFlip" : true,
         "allowRotate" : true
@@ -131,7 +132,7 @@
         "armRotation" : -20,
         "weaponRotation" : -70,
         "weaponOffset" : [0, 2.25],
-        "twoHanded" : false,
+         "twoHanded" : true,
 		
         "allowFlip" : true,
         "allowRotate" : true
@@ -141,7 +142,7 @@
         "armRotation" : -45,
         "weaponRotation" : -45,
         "weaponOffset" : [0, 2.25],
-        "twoHanded" : false,
+        "twoHanded" : true,
 		
         "allowRotate" : true,
         "allowFlip" : true
@@ -151,7 +152,7 @@
         "armRotation" : -135,
         "weaponRotation" : 50,
         "weaponOffset" : [0, 2.25],
-        "twoHanded" : false,
+        "twoHanded" : true,
 		
         "allowFlip" : true,
         "allowRotate" : true
@@ -161,7 +162,7 @@
         "armRotation" : 0,
         "weaponRotation" : -80,
         "weaponOffset" : [0, 2.25],
-        "twoHanded" : false,
+        "twoHanded" : true,
 		
         "allowFlip" : true,
         "allowRotate" : true

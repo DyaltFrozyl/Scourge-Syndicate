@@ -1,25 +1,25 @@
 {
-  "itemName" : "ss_iridiumshortspear",
+  "itemName" : "ss_acidiridiumrapier",
   "price" : 480,
-  "level" : 2,
+  "level" : 3,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A javelin-like shortspear, can thrust through plate and some scale.",
-  "shortdescription" : "Iridium Shortspear",
+  "description" : "Fast and destructive, quick stabs can land a hit or two and end it there.",
+  "shortdescription" : "Acid Iridium Rapier",
   "tooltipKind" : "object",
-  "category" : "Shortspear",
+  "category" : "'Sword-Spear'",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","shortsword", "ss_acidweapon"],
-  "upgradeItem" : "ss_acidiridiumshortspear",
+  "itemTags" : ["weapon","melee","shortsword"],
 
-  "inventoryIcon" : "ss_iridiumshortspear.png",
+  "inventoryIcon" : "ss_acidiridiumrapier.png",
 
   "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
   "animationParts" : {
-    "handle": "",
-    "blade" : "ss_iridiumshortspear.png"
+    "handle": "ss_acidiridiumrapier.png",
+    "blade" : "ss_acidiridiumrapierfullbright.png"
   },
-  "animationCustom" : {"animatedParts" : {
+  "animationCustom" : {
+   "animatedParts" : {
     "stateTypes" : {
       "swoosh" : {
         "default" : "idle",
@@ -45,9 +45,10 @@
     "parts" : {
       "blade" : {
         "properties" : {
-          "zLevel" : 0,
+          "zLevel" : 2,
           "centered" : true,
           "image" : "<partImage><paletteSwaps>?<bladeDirectives>",
+          "fullbright" : true,
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0]
         }
@@ -99,17 +100,17 @@
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "poison",
 
   "primaryAbilityType" : "shortswordcombo",
    "primaryAbility" : {
-    "fireTime" : 0.625,
-    "baseDps" : 6,
+    "fireTime" : 0.4,
+    "baseDps" : 9,
 
     "stances" : {
       "idle" : {
         "armRotation" : -90,
-        "weaponRotation" : -10,
+        "weaponRotation" : 0,
         "weaponOffset" : [0, 2.25],
         "twoHanded" : false,
 
